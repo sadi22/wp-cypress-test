@@ -37,6 +37,8 @@ jobs:
 
             - name: Cypress run
               uses: cypress-io/github-action@v4
+              with:
+                install-command: npm install --ignore-engines --force
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - uses: actions/upload-artifact@v3
