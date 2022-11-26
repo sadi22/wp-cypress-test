@@ -13,7 +13,7 @@ jobs:
             - name: Install dependencies
               run: |
                   composer install --ignore-platform-reqs
-                  npm ci --ignore-engines --force
+                  npm install --ignore-engines --force
                   npm run build
 
             - name: Maybe remove .wp-env.json
