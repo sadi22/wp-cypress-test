@@ -12,7 +12,7 @@ jobs:
               uses: actions/checkout@v3
             - name: Install dependencies
               run: |
-                  composer install
+                  composer install --ignore-platform-reqs
                   npm ci --ignore-engines --force
                   npm run build
 
@@ -34,7 +34,7 @@ jobs:
               run: |
                   npm install -g @wordpress/env
                   wp-env start --update
-                  
+
             - name: Cypress run
               uses: cypress-io/github-action@v4
               env:
