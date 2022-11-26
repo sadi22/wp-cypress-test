@@ -1,0 +1,557 @@
+.mintmrm-import-page {
+  background: #dadada;
+  padding-bottom: 500px;
+
+  .mintmrm-header {
+    padding-bottom: 85px;
+  }
+
+  .import-type-title,
+  .click-to-upload {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #6a707c;
+    text-align: center;
+  }
+  .click-to-upload-text {
+    color: #6f6af8;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .mrm-hide-element {
+    display: none;
+  }
+  .import-type-title {
+    padding-bottom: 20px;
+  }
+  .import-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-top: -60px;
+  }
+  .csv-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+
+    color: #6a707c;
+  }
+  .choose-import-section {
+    width: 276px;
+    padding: 20px 25px;
+  }
+
+  .upload-section {
+    width: calc(100% - 296px);
+    margin-left: 20px;
+  }
+  .choose-import-section,
+  .upload-section {
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  .upload-button {
+    width: 100%;
+    padding: 18px;
+    margin: 8px 0px;
+  }
+  .upload-section {
+    h3,
+    .csv-title,
+    .file-upload-section,
+    .select-field-form {
+      margin: 0 25px;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #101828;
+      padding: 20px 0 7px 0;
+    }
+    .csv-title {
+      margin-bottom: 25px;
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 15px;
+      /* identical to box height, or 107% */
+
+      color: #6a707c;
+      a {
+        text-decoration: underline;
+      }
+    }
+    .file-upload-section {
+      border: 1px dashed #cbcacf;
+      border-radius: 8px;
+      display: flex;
+      flex-flow: column wrap;
+      padding: 103px 0;
+      align-items: center;
+      row-gap: 18px;
+      /* padding-bottom: 25px; */
+      margin-bottom: 25px;
+
+      .click-to-upload {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+    .raw-textarea {
+      color: black;
+      width: calc(100% - 50px);
+      min-height: 340px;
+      margin: 10px 25px;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+    .raw-textarea::placeholder {
+      color: #6a707c;
+    }
+    .import-form-wrapper {
+      display: flex;
+      background-color: #f9f9f9;
+      padding: 22px 25px 25px 25px;
+      margin: 25px;
+      border: 1px solid #e4e6eb;
+      border-radius: 10px;
+
+      .form-group.contact-input-field {
+        label {
+          margin-bottom: 8px;
+          display: block;
+        }
+      }
+
+      .input-key-wrapper {
+        display: flex;
+        // flex-flow: row wrap;
+
+        input[type="text"] {
+          width: 100%;
+          min-width: 642px;
+        }
+
+        button.contact-save.mintmrm-btn {
+          margin-left: 15px;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+          padding: 15px 30px;
+        }
+      }
+
+      .error-message {
+        display: none;
+      }
+      .error-message.show {
+        display: inline-block;
+      }
+    }
+
+    .add-list {
+      display: none;
+      .select-list {
+        margin: 25px;
+
+        .select-btn {
+          position: relative;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 15px;
+          color: #6a707c;
+          padding: 7px 25px 7px 15px;
+          background-color: #f9fafb;
+          border: 1px solid #e4e6eb;
+          border-radius: 6px;
+          width: 100%;
+          max-width: 408px;
+          height: 46px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        .select-btn:before {
+          content: " ";
+          display: block;
+          position: absolute;
+          border-style: solid;
+          border-color: #686f7f;
+          border-width: 0px 1px 1px 0px;
+          transform: rotate(45deg);
+          transition: border-width 150ms ease-in-out;
+          height: 8px;
+          right: 15px;
+          top: calc(50% - 4px);
+          width: 8px;
+          cursor: pointer;
+        }
+
+        .select-btn.show:before {
+          transform: rotate(225deg);
+        }
+
+        .select-btn.selected {
+          background-color: #ffffff;
+          .selected-items {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            color: #6f6af8;
+            border-radius: 4px;
+            background-color: #f1f0fe;
+            padding: 5px 7px;
+            margin-right: 8px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: -0.01em;
+
+            svg {
+              width: 6px;
+              height: 6px;
+              margin-left: 4px;
+              path {
+                fill: #6f6af8;
+              }
+            }
+          }
+        }
+
+        .mintmrm-dropdown {
+          width: 408px;
+          left: 0;
+          top: calc(100% + 10px);
+        }
+      }
+    }
+    .add-list.show {
+      display: block;
+    }
+    .csv-save-button {
+      border-top: 1px solid #e4e6eb;
+      padding: 20px 25px 20px 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: end;
+      .contact-cancel {
+        margin-right: 12px;
+      }
+    }
+
+    .wordpress-import-section {
+      padding: 0px 25px 30px 25px;
+      p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #344054;
+        padding-bottom: 15px;
+      }
+      .mintmrm-checkbox {
+        margin-bottom: 20px;
+        label {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #6a707c;
+        }
+      }
+      .mintmrm-checkbox:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+    .select-field-table {
+      max-width: 100%;
+      width: 100%;
+      border: 1px solid #e4e6eb;
+      border-radius: 10px;
+      margin-bottom: 28px;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f9fafb;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #ccd0d9;
+        border-radius: 20px;
+      }
+    }
+
+    table {
+      position: relative;
+      border-collapse: collapse;
+      border-spacing: 0;
+      table-layout: auto;
+      width: 100%;
+      border: none;
+      border-radius: 0.5rem;
+      white-space: nowrap;
+    }
+    table {
+      thead {
+        th {
+          background: #f9fafb;
+          padding: 15px 20px;
+          vertical-align: middle;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: #667085;
+          border-bottom: 1px solid #e2e5ed;
+          text-align: left;
+
+          label {
+            color: #667085;
+            padding-left: 40px;
+          }
+        }
+        th:first-child {
+          border-radius: 10px 0 0 0;
+        }
+        th:last-child {
+          border-radius: 0 10px 0 0;
+        }
+      }
+    }
+
+    table {
+      tbody {
+        td {
+          width: 50%;
+          padding: 12px 20px;
+          vertical-align: middle;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          color: #6a707c;
+          text-align: left;
+
+          .form-group {
+            &.map-dropdown {
+              .drop-down-button {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #6a707c;
+                background-color: #ffffff;
+                width: 100%;
+                border: 1px solid #ebedf0;
+                border-radius: 6px;
+                text-align: left;
+                padding: 3px 15px 3px 15px;
+              }
+              .drop-down-button::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                border-style: solid;
+                border-color: #686f7f;
+                border-width: 0px 1px 1px 0px;
+                transform: rotate(45deg);
+                transition: border-width 150ms ease-in-out;
+                height: 5px;
+                right: 20px;
+                top: 40%;
+                width: 5px;
+                cursor: pointer;
+              }
+              .drop-down-button.show::before {
+                top: 47%;
+                transform: rotate(225deg);
+              }
+              .import-map{
+                width: 298px;
+                .option-section{
+                  .single-column{
+                    label{
+                      padding-left: 0;
+                    }
+                    label::before{
+                      display: none;
+                    }
+                    label::after{
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    tbody tr:nth-child(even) {
+      background: #f9fafb;
+    }
+
+    // table tr:last-child td:first-child {
+    //   border-bottom-left-radius: 0.5rem;
+    // }
+    // table th:first-child {
+    //   border-top-left-radius: 0.5rem;
+    // }
+    // table tr:last-child td:last-child {
+    //   border-bottom-right-radius: 0.5rem;
+    //   border-bottom: 0;
+    // }
+    // table tr:last-child td:first-child {
+    //   border-bottom: 0;
+    // }
+    // table th:last-child {
+    //   border-top-right-radius: 0.5rem;
+    // }
+    table tr > th:first-child,
+    table tr > td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+    }
+
+    .mintmrm-select2-selectbox {
+      padding: 0;
+    }
+    .mintmrm-select2-selectbox span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #6a707c;
+    }
+
+    .import-button {
+      border-top: 1px solid #e4e6eb;
+      padding: 20px 25px 20px 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: end;
+
+      .import-confirm-button {
+        margin-left: 12px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+
+    .confirmation-detail {
+      padding-top: 40px;
+      text-align: center;
+    }
+    .view-contact-detail {
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+    }
+
+    .profile-section h3 {
+      padding-bottom: 20px;
+    }
+
+    .contact-profile {
+      display: flex;
+      flex-flow: row wrap;
+      border: 1px solid #e4e6eb;
+      border-radius: 10px;
+      padding: 22px 25px 25px 25px;
+      margin-bottom: 22px;
+
+      .form-group {
+        width: calc(100% / 3 - 15px);
+        margin-left: 20px;
+
+        label {
+          margin-bottom: 6px;
+          display: block;
+        }
+
+        .drop-down-button{
+          position: relative;
+          border: 1px solid #e4e6eb;
+          border-radius: 6px;
+          background-color: #ffffff;
+          width: 100%;
+          padding: 14px 16px;
+          text-align: left;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: -0.01em;
+          color: #6a707c;
+        }
+
+        .mrm-custom-select-container {
+          width: 100%;
+          .mrm-custom-select-btn {
+            width: 100%;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: -0.01em;
+            color: #6a707c;
+            text-align: left;
+            padding: 15px 15px;
+          }
+          .single-column {
+            margin: 2px 0;
+            label {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .form-group:first-child {
+        margin-left: 0;
+      }
+    }
+    .wordpress-user {
+      box-shadow: 0px 20px 20px rgb(0 0 0 / 6%);
+      border-radius: 10px;
+      border-top: 1px solid blue;
+      margin: 50px 120px;
+
+      .wordpress-user-title {
+        padding: 32px;
+      }
+
+      // span {
+      //   display: block;
+
+      // }
+
+      .total-subscribe,
+      .existing-subscribe {
+        display: block;
+
+        span {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 15px;
+          color: #6a707c;
+          padding-left: 3px;
+        }
+      }
+
+      .csv-save-button {
+        padding: 20px 30px 20px 0;
+
+        .contact-save {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+

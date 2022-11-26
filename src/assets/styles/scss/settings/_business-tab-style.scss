@@ -1,0 +1,58 @@
+.mintmrm-settings-page {
+    .mintmrm-settings-wrapper {
+        .business-settings-tab-nav {
+            display: flex;
+            flex-flow: row wrap;
+            border-bottom: 1px solid #ebedf0;
+            margin-bottom: 30px;
+            gap: 30px;
+
+            button {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 1.3;
+                color: #2d3149;
+                background: transparent;
+                padding-bottom: 10px;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.3s ease;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 2px;
+                    width: 100%;
+                    background: $primary-color;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease;
+                }
+
+                &.active {
+                    color: $primary-color;
+
+                    &:before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+        //----only business tab content style----
+        .business-tab-content {
+            .tab-body {
+                padding: 30px;
+            }
+
+            .tab-header {
+                margin-bottom: 17px;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+}

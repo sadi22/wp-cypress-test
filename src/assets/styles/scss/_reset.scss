@@ -1,0 +1,86 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.mintmrm {
+ * {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+ }
+ *:focus {
+   box-shadow: none;
+   outline: none;
+ }
+ *:not(i) {
+   font-family: $body-font;
+ }
+ p {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-family: $body-font;
+ }
+ a,
+ p,
+ span,
+ section,
+ label,
+ div {
+   font-style: normal;
+  //  font-size: 15px;
+  //  line-height: 18px;
+   //color: $body-color;
+ }
+
+ a {
+   text-decoration: none;
+   color: $primary-color;
+
+   &:hover {
+     color: $secondary-color;
+   }
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ figur,
+ a {
+   margin: 0px;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-weight: normal;
+   -webkit-font-variant-ligatures: common-ligatures;
+   font-variant-ligatures: common-ligatures;
+ }
+
+ a:hover,
+ a:focus,
+ input:focus,
+ button:focus,
+ a:active {
+   text-decoration: none;
+   outline: none;
+   outline-offset: 0px;
+   box-shadow: none;
+ }
+ ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ img {
+   display: block;
+   max-width: 100%;
+ }
+}

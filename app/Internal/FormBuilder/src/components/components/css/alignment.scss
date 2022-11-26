@@ -1,0 +1,10 @@
+.mrmTypography-field-button-list {
+    &.mrmTypography-field-button-list-fluid {
+        display: flex;
+        justify-content: space-between;
+        .mrmTypography-button {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

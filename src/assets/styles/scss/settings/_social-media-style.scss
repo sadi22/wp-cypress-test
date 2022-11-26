@@ -1,0 +1,112 @@
+.mintmrm-settings-page {
+    .mintmrm-settings-wrapper {
+        .settings-tab-content {
+            .social-media-wrapper {
+                display: flex;
+                flex-flow: row wrap;
+                gap: 30px;
+                margin-top: 24px;
+
+                .single-media {
+                    background: #ffffff;
+                    border: 1px solid #e4e6eb;
+                    border-radius: 10px;
+                    padding: 24px;
+                    width: calc(100% / 2 - 15px);
+                    position: relative;
+
+                    .remove-media {
+                        position: absolute;
+                        right: 24px;
+                        top: 24px;
+                        background: #ffffff;
+                        border: 1px solid #e4e6eb;
+                        border-radius: 6px;
+                        width: 34px;
+                        height: 34px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        path {
+                            fill: #a7a8b3;
+                        }
+                    }
+
+                    .social-media-upload {
+                        width: 82px;
+                        height: 82px;
+                        background: #f6f8fa;
+                        border-radius: 100%;
+                        position: relative;
+                        margin-bottom: 20px;
+
+                        & > img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 100%;
+                            object-fit: cover;
+                        }
+
+                        .upload-btn {
+                            background: #ffffff;
+                            box-shadow: 0px 3px 4px #bbbbbb40;
+                            border-radius: 20px;
+                            width: 34px;
+                            height: 34px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: absolute;
+                            bottom: 10px;
+                            right: -10px;
+
+                            svg {
+                                width: 18px;
+                                height: 18px;
+
+                                path {
+                                    fill: #a7a8b3;
+                                }
+                            }
+                        }
+                    }
+
+                    .form-group {
+                        display: block;
+                        position: relative;
+
+                        &::before {
+                            content: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI0E3QThCMyIgZD0iTTE0LjU1NyA5LjQxMWEuODM0LjgzNCAwIDEwMS4xNzggMS4xNzhsMS4yODctMS4yODZhNC40NzQgNC40NzQgMCAwMC02LjMyNi02LjMyNkw5LjQxIDQuMjY0YS44MzMuODMzIDAgMTAxLjE3OCAxLjE3OGwxLjI4Ny0xLjI4N2EyLjgwNyAyLjgwNyAwIDExMy45NjkgMy45N0wxNC41NTcgOS40MXpNNS40NCAxMC41OWEuODMyLjgzMiAwIDAwLS45MDctMS4zNjYuODMzLjgzMyAwIDAwLS4yNzEuMTg3bC0xLjI4NyAxLjI4N2E0LjQ3MyA0LjQ3MyAwIDAwNi4zMjYgNi4zMjVsMS4yODctMS4yODZhLjgzMy44MzMgMCAwMC0xLjE3OC0xLjE3OGwtMS4yODcgMS4yODZhMi44MDcgMi44MDcgMCAwMS0zLjk3LTMuOTY5bDEuMjg3LTEuMjg3eiIvPjxwYXRoIGZpbGw9IiNBN0E4QjMiIGQ9Ik02LjgzNyAxMy4xNjZhLjgzMy44MzMgMCAwMDEuMTc4IDBsNS4xNTEtNS4xNWEuODM0LjgzNCAwIDEwLTEuMTc4LTEuMTc5bC01LjE1MSA1LjE0N2EuODMzLjgzMyAwIDAwMCAxLjE4MnoiLz48L3N2Zz4=);
+                            position: absolute;
+                            bottom: 8px;
+                            right: 12px;
+                            width: 20px;
+                        }
+
+                        & > label {
+                            width: 100%;
+                            padding: 0;
+                            margin-bottom: 7px;
+                            font-size: 14px;
+                        }
+                        input {
+                            width: 100%;
+                            padding-right: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .social-media-wrapper {
+        gap: 20px;
+    }
+    .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .social-media-wrapper .single-media {
+        padding: 20px;
+        width: 100%;
+    }
+}

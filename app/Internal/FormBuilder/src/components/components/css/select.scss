@@ -1,0 +1,19 @@
+.mrmTypography-popup-select{
+    position: relative;
+    select{
+        width: 100%;
+    }
+    .mrmTypography-clear{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        color: #8D96A0;
+        padding: 2px 6px;
+        cursor: pointer;
+        &:hover{
+            color: #717982;
+        }
+    }
+}

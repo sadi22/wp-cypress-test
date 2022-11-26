@@ -1,0 +1,116 @@
+.email-builder-editor {
+    .mintmrm-delete-alert-wrapper {
+        padding: 0;
+        display: none;
+
+        &.show-modal {
+            display: flex;
+        }
+    }
+}
+
+.email-builder-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background: #00000054;
+    display: none;
+
+    &.show-loader {
+        display: block;
+    }
+
+    .mintmrm-loader {
+        border: 2px solid #222222;
+        border-top-color: #fff;
+        width: 50px;
+        height: 50px;
+        margin-left: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.mrm-email-editor {
+    & > .arco-card {
+        margin: 30px;
+        width: calc(100% - 60px);
+        border: none;
+        background: transparent;
+    }
+
+    .arco-collapse-item-content-box {
+        padding: 8px 20px 8px 20px;
+    }
+
+    hr {
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .mintmrm-delete-alert-wrapper .mintmrm-delete-confirmation {
+        .delete-confirmation-body {
+            display: block;
+            padding: 30px;
+
+            .form-group {
+                label {
+                    margin-bottom: 7px;
+                }
+                input[type=email] {
+                    min-height: 42px;
+                }
+            }
+           
+        }
+
+        .mintmrm-delete-confirm-btn {
+            li {
+                margin: 0;
+            }
+            .alert-message {
+                p {
+                    color: #09af09;
+                    margin-right: 10px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                
+                &.mintmrm-error p {
+                    color: #eb1010;
+                }
+            }
+
+            .mintmrm-loader {
+                display: inline-block;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+
+    .arco-card-body {
+        & > .arco-layout {
+            width: 100%!important;
+
+            & > .arco-layout {
+                background: #E6E6E6;
+                border-radius: 10px;
+                width: calc(100% - 360px);
+                flex: calc(100% - 360px) 0 0!important;
+                margin-right: 30px;
+
+                .shadow-container {
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+
+}

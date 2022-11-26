@@ -1,0 +1,33 @@
+{
+  "name": "coderex/code-rex-crm",
+  "license": "Apache-2.0",
+  "description": "Advanced WordPress CRM to easily collect leads, run email campaigns, set up automation, and many more.",
+  "scripts": {
+    "test": "phpunit",
+    "phpcs": "./vendor/bin/phpcs",
+    "phpcs:report": "./vendor/bin/phpcs --report=csv > output.csv",
+    "phpcs:fix": "./vendor/bin/phpcbf"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mint\\MRM\\": "app/"
+    },
+    "classmap": [
+      "app"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7",
+    "yoast/phpunit-polyfills": "^1.0",
+    "wp-coding-standards/wpcs": "^2.3",
+    "phpcompatibility/phpcompatibility-wp": "*",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7"
+  },
+  "config": {
+    "platform-check": false,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "prefer-stable": true
+}

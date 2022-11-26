@@ -1,0 +1,12 @@
+{
+  "env": {
+    "tests": {
+      "themes": [
+        "https://downloads.wordpress.org/theme/twentytwentyone.zip"
+      ],
+      "plugins": [
+        "."
+      ]
+    }
+  }
+}

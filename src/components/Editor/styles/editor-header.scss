@@ -1,0 +1,162 @@
+.mrm-email-editor {
+    .mrm-editor-header {
+        box-shadow: 0px 1px 1px #b6b9bf4d;
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 18px 30px;
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .arco-icon-hover.arco-page-header-icon-hover::before {
+            display: none;
+        }
+
+        .arco-page-header-head-extra {
+            white-space: normal;
+            overflow: visible;
+            display: flex;
+            align-items: center;
+        }
+
+        .arco-btn {
+            border: 1px solid #E4E6EB;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+            color: #2D3149;
+            padding: 10px 16px;
+            height: auto;
+            text-transform: capitalize;
+            background-color: transparent;
+            margin-left: 16px;
+            outline: none;
+            box-shadow: none;
+            transition: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                background-color: transparent!important;
+                border-color: #E4E6EB!important;
+                color: #2D3149!important;
+            }
+        }
+
+        .back-from-editor {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .more-option {
+            padding: 9px 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .more-option-list {
+                list-style: none;
+                margin: 0;
+                position: absolute;
+                left: 0;
+                top: calc(100% + 10px);
+                z-index: 99;
+                background: #FFFFFF;
+                border: 1px solid #F0F1F4;
+                box-shadow: 0px 6px 8px #bfbfbf1a;
+                border-radius: 6px;
+                padding: 8px;
+                width: 163px;
+                display: none;
+
+                li {
+                    button {
+                        display: block;
+                        width: 100%;
+                        margin: 0;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 1.14;
+                        color: #2D3149;
+                        padding: 8px 8px;
+                        border: none;
+                        text-align: left;
+                        border-radius: 4px;
+                        margin-bottom: 1px;
+
+                        &:hover {
+                            background: #F6F8FA!important;
+                        }
+                    }
+                }
+            }
+
+            &.show-option-list {
+                .more-option-list {
+                    display: block;
+                }
+            }
+        }
+
+        .mood-change-btn {
+            padding: 10px 10px;
+            width: 40px;
+        }
+
+        .responsive-check {
+            border: 1px solid #E4E6EB;
+            border-radius: 6px;
+            margin-left: 15px;
+            display: flex;
+
+            button {
+                height: 40px;
+                padding: 6px;
+                width: 40px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                border: none;
+                border-right: 1px solid #E4E6EB;
+                border-radius: 0;
+
+                &:last-child {
+                    border-right: 0;
+                    border-radius: 0 6px 6px 0;
+                }
+                &:first-child {
+                    border-radius: 6px 0 0 6px;
+                }
+
+                &:hover {
+                    background: #f1f1f1!important;
+                }
+
+                &.active {
+                    background-color: #f1f1f1!important;
+                }
+            }
+        }
+
+    }
+
+}

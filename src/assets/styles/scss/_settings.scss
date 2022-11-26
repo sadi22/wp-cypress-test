@@ -1,0 +1,51 @@
+.mintmrm-settings-page {
+    padding: 40px 0;
+
+    .mintmrm-settings {
+        .conatct-heading {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+            color: #2d3149;
+            margin-bottom: 25px;
+        }
+    }
+
+    .mintmrm-settings-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 24px;
+
+        .loader-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #e9e8e8;
+            border-radius: 10px;
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .mintmrm-loader {
+                width: 40px;
+                height: 40px;
+                display: block;
+            }
+        }
+    }
+}
+
+@import 'settings/navbar';
+@import 'settings/settings-tab-content';
+@import 'settings/business-tab-style';
+@import 'settings/social-media-style';
+@import 'settings/general-tab-style';
+@import 'settings/double-optin-tab-style';
+@import 'settings/custom-field-tab-style';
+@import 'settings/custom-field-modal';
+@import 'settings/user-signup';
+@import 'settings/smtp-tab-style';
+@import 'settings/woocommerce-tab-style';

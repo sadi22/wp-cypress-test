@@ -1,0 +1,66 @@
+.mrmTypography-shape-picker-wrapper {
+    display: flex;
+    .mrmTypography-shape-picker {
+        width: 100%;
+    }
+    .has-value {
+        width: 90%;
+    }
+}
+
+.mrmTypography-shape-picker-options {
+    width: 230px;
+    .mrmTypography-shape-picker-option {
+        padding: 10px 10px 10px 10px;
+    }
+    .mrmTypography-shape-picker-option:hover {
+        background-color: #e8eaeb;
+        border-radius: 4px;
+    }
+}
+.mrmTypography-field-shape-placeholder {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    cursor: default;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    border-color: rgb(204, 204, 204);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    transition: all 100ms ease 0s;
+    outline: 0px !important;
+    line-height: 28px;
+    height: 30px;
+    vertical-align: middle;
+    padding-left: 10px;
+    .mrmTypography-icon {
+        display: flex;
+        padding-right: 5px;
+    }
+}
+
+.mrmTypography-field-shape-value:hover {
+    cursor: pointer;
+}
+.shape-divider-options {
+    button {
+        display: block;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        color: inherit;
+        background: none;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        &:focus {
+            outline: none !important;
+        }
+    }
+}

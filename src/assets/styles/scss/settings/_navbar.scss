@@ -1,0 +1,67 @@
+.mintmrm-settings-page {
+    .mintmrm-settings-wrapper {
+        .settings-navbar {
+            width: 314px;
+            background: #fff;
+            box-shadow: 0px 1px 1px #b6b9bf4d;
+            border-radius: 10px;
+            padding: 24px;
+
+            ul {
+                li:last-child {
+                    .mintmrm-btn {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .mintmrm-btn {
+                display: flex;
+                align-items: center;
+                padding: 18px 20px;
+                margin-bottom: 16px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.19;
+                text-align: left;
+
+                svg {
+                    margin-right: 9px;
+                    path {
+                        transition: all 0.3s ease;
+                    }
+                }
+                &.outline {
+                    color: #2d3149;
+                }
+                &.active,
+                &:hover {
+                    background-color: #573bff;
+                    color: #fff;
+                    svg {
+                        path {
+                            fill: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .mintmrm-settings-page .mintmrm-settings-wrapper .settings-navbar {
+        width: 270px;
+        padding: 20px;
+
+        .mintmrm-btn {
+            padding: 15px;
+            font-size: 14px;
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .mintmrm-settings-page .mintmrm-settings-wrapper .settings-navbar {
+        width: 200px;
+        padding: 20px;
+    }
+}

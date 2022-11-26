@@ -1,0 +1,29 @@
+.mrmTypography-field {
+	&.mrmTypography-field-toggle{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		> label{
+			width: auto;
+			margin-bottom: 0;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 1.5;
+			letter-spacing: -0.01em;
+			color: #A7A8B3;
+			display: block;
+		}
+		.components-toggle-control,
+		.components-toggle-control .components-base-control__field{
+			margin-bottom: 0!important;
+		}
+		.components-toggle-control .components-base-control__field .components-form-toggle{
+			margin-right: 0;
+		}
+		.components-form-toggle.is-checked .components-form-toggle__track {
+			background-color: #2184F9;
+		}
+	}
+}

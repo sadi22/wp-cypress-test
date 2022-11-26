@@ -1,0 +1,56 @@
+.contact-list-area {
+  .left-filters {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    .select2-result
+      .select2-container.select2-container--default.select2-container--open
+      .select2-search.select2-search--dropdown {
+        display: none;
+      }
+    .sort-by {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      padding-right: 15px;
+      color: #344054;
+    }
+    .sort-by-dropdown {
+      position: relative;
+
+      .drop-down-button {
+        background: transparent;
+        border: 1px solid #e4e6eb;
+        border-radius: 6px;
+        padding: 7px 31px 7px 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #344054;
+      }
+
+      .drop-down-button:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        border-style: solid;
+        border-color: #686f7f;
+        border-width: 0px 1px 1px 0px;
+        transform: rotate(45deg);
+        transition: all 0.3s ease;
+        height: 5px;
+        right: 10px;
+        top: calc(50% - 4px);
+        width: 5px;
+        cursor: pointer;
+        transform-origin: center;
+      }
+
+      .drop-down-button.show:before {
+        top: 47%;
+        transform: rotate(225deg);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,92 @@
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+*.map
+wpf.code-workspace
+output.csv
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+**.DS_Store*
+ehthumbs.db
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+**/.sass-cache
+**/.sass-cache/*
+**/.map
+
+# Composer #
+##########
+composer.lock
+vendor/
+
+
+# yarn #
+##########
+yarn.lock
+
+# Bower #
+##########
+assets/bower_components/*
+
+# Codekit #
+##########
+/codekit-config.json
+*.codekit
+**.codekit-cache/*
+
+# NPM #
+##########
+node_modules
+package-lock.json
+
+# Compiled Files and Build Dirs #
+##########
+/README.html
+/build/vendor
+
+# PhpStrom Project Files #
+.idea/
+phpcs-report.txt
+
+
+# Tests #
+__tests/_output
+__tests/_data
+codeception.yml
+.env.local
+.env
+.phpcs.xml.dist
+.travis.yml
+Dockerfile
+bin/
+docker-compose.yml
+phpunit.xml.dist
+*.csv
+admin/asset/dist
+assets/admin/dist
+dist/
+/node_modules
+/build
+/app/Internal/FormBuilder/build

@@ -1,0 +1,70 @@
+.general-settings-body {
+    .wp-user {
+        border-bottom: 1px solid #ebedf0;
+        margin: -30px -24px 23px;
+        padding: 14px 24px;
+        span {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.21;
+            color: #9398a5;
+            &:first-child {
+                width: 223px;
+            }
+        }
+    }
+
+    &.user-signup-settings {
+        & > label {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 1.2;
+            color: #344054;
+        }
+        .single-wp-dropdown {
+            width: calc(100% - 223px);
+            .drop-down-button {
+                padding: 13px 16px;
+
+                &:first-child {
+                    margin-top: 0 !important;
+                }
+                &:before {
+                    top: 45% !important;
+                }
+                &.show::before {
+                    top: 45% !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .general-settings-body.user-signup-settings .single-wp-dropdown {
+        width: calc(100% - 195px);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .general-settings-body.user-signup-settings .single-wp-dropdown {
+        width: 100%;
+    }
+    .general-settings-body.user-signup-settings .single-wp-dropdown .drop-down-button:before {
+        top: 45% !important;
+    }
+    .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group .drop-down-button::before {
+    content: " ";
+        top: 45%;
+    }
+    .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group .drop-down-button.show::before {
+        top: 45%;
+    }
+    // .general-settings-body.user-signup-settings .single-wp-dropdown .drop-down-button:before {
+    //     top: 65% !important;
+    // }
+    // .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group .drop-down-button.show::before {
+    //     top: 67% !important;
+    // }
+}

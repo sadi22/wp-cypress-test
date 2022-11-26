@@ -1,0 +1,55 @@
+body[arco-theme="dark"]{
+    .mrm-email-editor {
+        background: #181818;
+    }
+
+    .mrm-email-editor .mrm-editor-header .responsive-check {
+        border-color:#484849;
+    }
+    .mrm-email-editor .mrm-editor-header .responsive-check button:hover {
+        background: #181818 !important;
+    }
+
+    .mrm-email-editor .mrm-editor-header .arco-page-header-head-main-with-back {
+        border-color:#484849;
+    }
+    .mrm-email-editor .mrm-editor-header .arco-page-header-head-main-with-back svg {
+        stroke: #ffffffe6;
+    }
+
+    .mrm-email-editor .mrm-editor-header .mood-change-btn path {
+        fill: #ffffffe6;
+    }
+    .mrm-email-editor .mrm-editor-header .more-option svg g {
+        stroke: #ffffffe6!important;
+    }
+
+    .mrm-email-editor .mrm-editor-header .arco-btn {
+        border-color:#484849;
+    }
+    .mrm-email-editor .mrm-editor-header .arco-btn {
+        border-color:#484849;
+        color:#ffffffe6;
+
+        &:hover {
+            color:#ffffffe6!important;
+            border-color:#484849!important;
+        }
+    }
+
+    .mrm-email-editor .mrm-editor-header .more-option .more-option-list {
+        background: #2a2a2b;
+        border-color:#484849;
+    }
+    .mrm-email-editor .mrm-editor-header .more-option .more-option-list li button {
+        color:#ffffffe6;
+    }
+    .mrm-email-editor .mrm-editor-header .more-option .more-option-list li button:hover {
+        background: #181818 !important;
+    }
+
+    .mrm-email-editor .arco-card-body > .arco-layout {
+        background: transparent;
+    }
+
+}

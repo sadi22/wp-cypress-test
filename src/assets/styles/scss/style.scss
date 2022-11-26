@@ -1,0 +1,31 @@
+@import "font";
+@import "reset";
+@import "default";
+@import "elements";
+@import "header";
+@import "create-contact";
+@import "all-contacts";
+@import "contact-details";
+@import "all-lists";
+@import "import-page";
+@import "campaign-module";
+@import "campaign-list";
+@import "add-campaign";
+@import "contact-list";
+@import "tags";
+@import "email-template";
+@import "campaign-email-builder";
+@import "drawer";
+@import "custom-select";
+@import "shimmer";
+@import "form";
+@import "form-editor";
+@import "mrm-navbar";
+@import "contact-header";
+@import "add-segment";
+@import "tool-tip";
+@import "settings";
+
+.arco-layout-has-sider {
+  width: 100% !important;
+}

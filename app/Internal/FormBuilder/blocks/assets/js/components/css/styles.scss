@@ -1,0 +1,126 @@
+.mrmTypography-field-styles {
+    .mrmTypography-field-style-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        >div {
+            text-align: center;
+            margin: 4px 0;
+            flex-shrink: 0;
+            cursor: pointer;
+            overflow: hidden;
+            padding: 0;
+            margin-bottom: 10px;
+            .mrmTypography-layout-style {
+                display: block;
+                border: 1px solid #DFE1E3;
+                border-radius: 4px;
+                transition: border-color 400ms;
+                img {
+                    display: block;
+                    width: 100%;
+                    border-radius: 4px;
+                }
+            }
+
+            .mrmTypography-field-style-icon,
+            .mrmTypography-field-style-svg,
+            .mrmTypography-field-style-label {
+                display: block;
+                text-align: center;
+            }
+
+            .mrmTypography-field-style-label {
+                margin-top: 5px;
+                transition: color 400ms;
+            }
+
+            &:hover {
+                .mrmTypography-layout-style {
+                    border-color: #666;
+                }
+            }
+            
+            &.mrmTypography-active {
+                .mrmTypography-layout-style {
+                    border-color: #2184F9;
+                }
+                .mrmTypography-field-style-label {
+                    color: #2184F9;
+                }
+            }
+            &.mrmTypography-pro-layout{
+                cursor:no-drop;
+            }
+        }
+
+        &.mrmTypography-field-style-columns-2 {
+            >div {
+                width: calc(50% - 4px);
+            }
+        }
+
+        &.mrmTypography-field-style-columns-21 {
+            >div {
+                width: calc(50% - 4px);
+                &:last-child {
+                    width: calc(100% - 4px);
+                }
+            }
+        }
+
+        &.mrmTypography-field-style-columns-3 {
+            >div {
+                width: calc(33.33% - 4px);
+            }
+        }
+
+        &.mrmTypography-field-style-columns-4 {
+            >div {
+                width: calc(25% - 4px);
+            }
+        }
+    }
+}
+.mrmTypography-field-pro-upgrade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    .mrmTypography-upgrade-message{
+        display: flex;
+        padding: 10px 0px 20px 0px;
+        flex-direction: column;
+        align-items: center;
+        .mrmTypography-upgrade-message-title{
+            color: #000;
+            font-weight: 400;
+            font-size: 26px;
+            padding: 20px 0px;
+        }
+        .mrmTypography-upgrade-message-description{
+            width: 85%;
+            font-size: 15px;
+            font-weight: 100;
+            line-height: 1.5;
+            text-align: center;
+        }
+    }
+    .mrmTypography-upgrade-button{
+        color: #fff;
+        cursor: pointer;
+        border: 1px #979797;
+        border-radius: 21px;
+        padding: 7px 19px;
+        background-color: #2184F9;
+        text-decoration: none;
+        box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+        font-size: 12px;
+        font-weight: 600;
+        transition: 400ms;
+        &:hover {
+            background-color: #146dd6;
+            box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.4);
+        }
+    }
+}

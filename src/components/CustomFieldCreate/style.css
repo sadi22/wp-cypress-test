@@ -1,0 +1,16 @@
+.first-division {
+  display: flex;
+  margin-bottom: 10px !important;
+}
+
+.first-division button {
+  padding: 0px 10px;
+  margin-left: 5px;
+  background: #fe1919;
+  border-radius: 7px;
+  padding-top: 5px;
+}
+
+.first-division .remove-btn svg path {
+  fill: #ffffff;
+}

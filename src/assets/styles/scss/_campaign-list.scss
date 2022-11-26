@@ -1,0 +1,499 @@
+@import "variables";
+
+.campaign-list-page {
+  padding-bottom: 60px;
+
+  .campaign-list-area {
+    .campaign-list-body {
+      border: none;
+    }
+  }
+  .campaign-list-area {
+    margin-top: 30px;
+
+    .campaign-list-header {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 24px;
+      background: #ffffff;
+      border-radius: 10px 10px 0 0;
+
+      .left-filters {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        .select2-result
+          .select2-container.select2-container--default.select2-container--open
+          .select2-search.select2-search--dropdown {
+          display: none;
+        }
+        .sort-by {
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 18px;
+          padding-right: 15px;
+          color: #344054;
+        }
+        .sort-by-dropdown {
+          position: relative;
+
+          .drop-down-button {
+            background: transparent;
+            border: 1px solid #e4e6eb;
+            border-radius: 6px;
+            padding: 7px 31px 7px 10px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #344054;
+          }
+
+          .mintmrm-dropdown {
+            position: absolute;
+            background: #fff;
+            right: 0;
+            top: calc(100% + 16px);
+            width: 125px;
+            border: 1px solid #e2e5ed;
+            z-index: 5;
+            transition: all 0.3s ease;
+            box-shadow: 0px 10px 20px rgb(0 0 0 / 6%);
+            border-radius: 6px;
+            padding: 8px;
+            display: none;
+
+            &.show {
+              display: block;
+            }
+          }
+
+          .drop-down-button:before {
+            content: " ";
+            display: block;
+            position: absolute;
+            border-style: solid;
+            border-color: #686f7f;
+            border-width: 0px 1px 1px 0px;
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+            height: 5px;
+            right: 10px;
+            top: calc(50% - 4px);
+            width: 5px;
+            cursor: pointer;
+            transform-origin: center;
+          }
+
+          .drop-down-button.show:before {
+            top: 47%;
+            transform: rotate(225deg);
+          }
+        }
+      }
+      .right-buttons {
+        display: flex;
+        flex-flow: row wrap;
+        .search-section {
+          position: relative;
+          svg {
+            position: absolute;
+            top: 10px;
+            left: 16px;
+          }
+          input {
+            padding: 8px 10px 8px 40px;
+            width: 200px;
+          }
+        }
+        .bulk-action {
+          position: relative;
+          .more-option {
+            background: #ffffff;
+            border: 1px solid #e4e6eb;
+            border-radius: 6px;
+            height: 34px;
+            width: 34px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-left: 12px;
+          }
+          .assigned-to.mintmrm-dropdown {
+            width: 332px !important;
+
+            .list-title {
+              margin-bottom: 0;
+            }
+            .option-section {
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+    }
+
+    //---------campaign-list-body------
+    .campaign-list-body {
+      position: relative;
+
+      .campaign-list-table {
+        max-width: 100%;
+        width: 100%;
+        overflow-x: auto;
+
+        .campaign-table {
+          .table-head {
+            background-color: #fcfdfe;
+            border-top: 1px solid #ebedf0;
+            border-bottom: 1px solid #ebedf0;
+          }
+        }
+
+        &::-webkit-scrollbar {
+          width: 6px;
+          height: 6px;
+        }
+        &::-webkit-scrollbar-track {
+          background: #f9fafb;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #ccd0d9;
+          border-radius: 20px;
+        }
+      }
+
+      .campaign-table {
+        position: relative;
+        border-collapse: collapse;
+        border-spacing: 0;
+        table-layout: auto;
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+        white-space: nowrap;
+      }
+      .campaign-table {
+        .table-head {
+          .table-row {
+            display: flex;
+            flex-flow: row wrap;
+            .table-header {
+              padding: 15px 20px;
+              vertical-align: middle;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 18px;
+              color: #667085;
+              text-align: left;
+              position: sticky;
+              top: 0;
+
+              label {
+                color: #667085;
+                padding-left: 40px;
+              }
+            }
+          }
+        }
+        .table-body {
+          .table-row {
+            background-color: #ffffff;
+            display: flex;
+            flex-flow: row wrap;
+            padding: 5px 0px;
+            border-bottom: 1px solid #e9eaee;
+
+            .table-data {
+              padding: 15px 20px;
+              vertical-align: middle;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 1.3;
+              color: #6a707c;
+              // border-bottom: 1px solid #e2e5ed;
+              text-align: left;
+
+              &.threedot {
+                width: calc(100% - 1070px);
+                display: flex;
+                justify-content: end;
+                padding-right: 27px;
+                .more-option {
+                  background: white;
+                  position: relative;
+                  .mintmrm-dropdown {
+                    width: 180px;
+
+                    // &:last-child {
+                    //   top: calc(100% + -120px);
+                    //   &::before {
+                    //     top: calc(100% - 4px);
+                    //     transform: rotate(220deg);
+                    //   }
+                    // }
+                  }
+                }
+              }
+
+              label {
+                color: #667085;
+                padding-left: 40px;
+              }
+
+              .tag-item,
+              .list-item {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 1;
+                letter-spacing: -0.01em;
+                color: #667085;
+                border: 1px solid #e4e6eb;
+                border-radius: 6px;
+                text-transform: capitalize;
+                padding: 3px 5px;
+                margin-right: 5px;
+                display: inline-block;
+              }
+              &.no-campaign {
+                width: 100%;
+              }
+            }
+
+            &:last-child {
+              .threedot {
+                .more-option {
+                  .mintmrm-dropdown {
+                    top: inherit;
+                    bottom: calc(100% + 8px);
+                    &::before {
+                      top: calc(100% - 4px);
+                      transform: rotate(220deg);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          // .table-row:last-child {
+          //     border-bottom: none;
+          // }
+
+          .email {
+            display: flex;
+            align-items: center;
+
+            .title {
+              max-width: 220px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              cursor: pointer;
+              display: flex;
+              flex-flow: column wrap;
+              gap: 4px;
+              a {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                color: #121212;
+              }
+              &:hover {
+                a {
+                  color: $primary-color;
+                }
+              }
+              span {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: -0.01em;
+                color: #b6b6b7;
+              }
+            }
+            .mintmrm-checkbox label:before {
+              top: 1px;
+            }
+            .mintmrm-checkbox label:after {
+              top: 7px;
+            }
+          }
+
+          .status {
+            span {
+              border-radius: 6px;
+              display: inline-block;
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 15px;
+              padding: 4px 8px;
+              text-transform: capitalize;
+
+              &.draft {
+                color: #121212;
+                background: #f4f4f4;
+              }
+              &.archived {
+                color: #573bff;
+                background: #f1f0fe;
+              }
+              &.active {
+                color: #239654;
+                background: rgba(35, 150, 84, 0.1);
+              }
+              &.suspended {
+                color: #f7900a;
+                background: rgba(247, 144, 10, 0.1);
+              }
+            }
+          }
+
+          .action {
+            button {
+              position: relative;
+            }
+          }
+        }
+        .table-head,
+        .table-body {
+          .table-row {
+            align-items: center;
+          }
+          .campaign-name {
+            width: 390px;
+          }
+          .campaign-name-wrapper {
+            width: 390px;
+          }
+          .recipient,
+          .open-rate,
+          .click-rate {
+            width: 125px;
+          }
+          .unsubscribers {
+            width: 160px;
+          }
+          .status {
+            width: 145px;
+          }
+          .three-dot {
+            width: 60px;
+          }
+        }
+        .table-body {
+          .campaign-name {
+            svg {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+    // ------end .campaign-list-body-------
+
+    //---------contact-list-footer------
+    .contact-list-footer {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 15px;
+      width: 100%;
+      justify-content: space-between;
+      background-color: #ffffff;
+      padding: 25px 29px 25px 27px;
+      border-radius: 0 0 10px 10px;
+
+      .footer-show-number {
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        gap: 9px;
+        .showing {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #2d3149;
+        }
+
+        input {
+          width: 52px;
+          min-width: auto;
+          padding: 5px;
+          height: 34px;
+        }
+
+        .single-page-data {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #9398a5;
+        }
+      }
+
+      .footer-pagination {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+
+        li {
+          margin-left: 2px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.21;
+          color: #9398a5;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          cursor: pointer;
+          padding: 8px 12px;
+
+          &.active {
+            background: #573bff;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .campaign-list-header {
+        .right-buttons {
+          margin-top: 15px;
+        }
+      }
+      .contact-list-footer {
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+    // ------end .contact-list-footer-------
+  }
+
+  .campaign-list-table {
+    .no-campaign-wrapper {
+      height: 304px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.3;
+        color: #101828;
+        margin-top: 15px;
+      }
+    }
+    .table-body {
+      .table-row:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

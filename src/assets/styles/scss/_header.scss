@@ -1,0 +1,110 @@
+.mintmrm-header {
+  background: #10052e;
+  padding: 20px;
+  width: 100%;
+
+  .header-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-logo {
+      h2 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 38px;
+        /* identical to box height, or 158% */
+
+        color: #ffffff;
+      }
+    }
+
+    .mintmrm-navbar {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-ul {
+      display: flex;
+      color: #bdbbc2;
+
+      li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+
+        &:first-child {
+          margin: 0;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          top: -23px;
+          left: 0;
+          background-color: #ffffff;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s ease;
+        }
+
+        .bage {
+          background: rgba(111, 106, 248, 0.1);
+          border-radius: 20px;
+          color: $primary-color;
+          margin-left: 7px;
+          padding: 5px 10px;
+          font-weight: 500;
+          font-size: 8px;
+          line-height: 10px;
+          letter-spacing: -0.01em;
+        }
+
+        a {
+          padding: 8px 0;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1;
+          letter-spacing: -0.01em;
+          color: #bdbbc2;
+        }
+
+        &.active {
+          &:before {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          a {
+            color: #ffffff;
+          }
+
+          .bage {
+            background: $primary-color;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .navbar-buttons {
+      display: flex;
+      align-items: center;
+
+      .mintmrm-btn {
+        display: flex;
+        gap: 5px;
+      }
+
+      .import-btn {
+        margin-right: 15px;
+        border-color: #2a1a54;
+        color: #ffffff;
+      }
+    }
+  }
+}

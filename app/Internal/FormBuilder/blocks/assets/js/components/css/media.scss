@@ -1,0 +1,35 @@
+.mrmTypography-media {
+	margin-bottom: 15px;
+	label {
+		margin-bottom: 10px;
+		display: block;
+	}
+	.mrmTypography-media-actions {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	.mrmTypography-single-img {
+		.mrmTypography-media-image-parent {
+			position: relative;
+			display: inline-block;
+			min-height: 140px;
+			min-width: 140px;
+			img {
+				margin: 0;
+			}
+		}
+	}
+	.mrmTypography-placeholder-image {
+		border: 1px dashed #dddd;
+		padding: 20px 20px 25px;
+		text-align: center;
+		background: #ffffff;
+		cursor: copy;
+		border-radius: 5px;
+		div {
+			margin: 8px 0px;
+			text-align: center;
+		}
+	}
+}

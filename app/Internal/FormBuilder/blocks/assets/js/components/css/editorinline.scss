@@ -1,0 +1,30 @@
+.components-toolbar.components-toolbar {
+  div {
+    button {
+      width: auto;
+      .mrmTypography-color-picker-icon-wraper {
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        padding: 0px 5px 0px 5px;
+      }
+    }
+  }
+}
+.components-toolbar {
+  button {
+    img {
+      &.mrmTypography-block-icon {
+        &.small {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.mrmTypography-toolber-popup {
+  .mrmTypography-field-alignment {
+    margin-bottom: 15px;
+  }
+}

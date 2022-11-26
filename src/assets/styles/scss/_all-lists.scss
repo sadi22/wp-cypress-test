@@ -1,0 +1,40 @@
+.mrm-floating-dropdown {
+  width: 315px;
+  height: 200px;
+  right: -2px;
+  top: calc(100% - 5px);
+
+  &:before {
+    right: 21px;
+    top: -6px;
+  }
+
+  li {
+    margin-bottom: 3px;
+
+    &.list-title {
+      margin-bottom: 10px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.mrm-empty-state-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1190px;
+  min-height: 400px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    background-color: #ffffff;
+  }
+}

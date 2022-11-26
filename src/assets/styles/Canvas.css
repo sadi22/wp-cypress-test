@@ -1,0 +1,125 @@
+.reactflow-wrapper {
+  width: 100%;
+  height: 70vh;
+}
+
+.canvas-settings-wrapper {
+  position: fixed;
+  padding-top: 40px;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  width: 0px;
+  background-color: white;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 2000;
+  transition: width 0.7s ease-in-out;
+}
+
+.canvas-settings-wrapper-open {
+  width: 40%;
+}
+
+.canvas-settings-wrapper-close {
+  width: 0px;
+}
+
+.canvas-drag-picker-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.canvas-step-wrapper,
+.dndnode {
+  width: 200px;
+  padding: 10px;
+  height: 100px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.dndnode {
+  width: auto;
+  margin: 10px;
+  cursor: grab;
+  background-color: var(--p-action-primary);
+  color: var(--p-text-on-primary);
+  font-family: var(--p-font-family-sans);
+  font-weight: bold;
+}
+
+.handle-right {
+  width: 15px;
+  height: 15px;
+  right: -8px;
+}
+
+.handle-left {
+  width: 15px;
+  height: 15px;
+  left: -8px;
+}
+
+.canvas-step-options-wrapper {
+  position: absolute;
+  top: -25px;
+  left: 0px;
+  width: 100%;
+  padding: 4px;
+  display: flex;
+  background: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-sizing: border-box;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 3px 0px;
+}
+
+.canvas-step-options-wrapper:hover {
+  visibility: visible;
+}
+
+.canvas-step-wrapper:hover .canvas-step-options-wrapper {
+  visibility: visible;
+}
+
+.canvas-step-option {
+  margin: 0px 10px;
+  border-bottom: 2px solid white;
+}
+.canvas-step-option:hover {
+  cursor: pointer;
+  border-bottom: 2px solid var(--p-action-primary);
+}
+
+.canvas-step-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.canvas-step-title {
+  text-align: center;
+  font-weight: bold;
+  margin: 4px 0px;
+}
+
+.save__controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 4;
+  font-size: 12px;
+}
+
+.save__controls button {
+  margin-left: 5px;
+}
+

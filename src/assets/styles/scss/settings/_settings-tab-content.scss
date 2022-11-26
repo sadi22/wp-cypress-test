@@ -1,0 +1,596 @@
+.mintmrm-settings-page {
+    .mintmrm-settings-wrapper {
+        .settings-tab-content {
+            background: #ffffff;
+            box-shadow: 0px 1px 1px #b6b9bf4d;
+            border-radius: 10px;
+            width: calc(100% - (314px + 24px));
+
+            .tab-body {
+                padding: 20px 30px 30px;
+            }
+
+            .tab-header {
+                margin-bottom: 30px;
+                padding-bottom: 18px;
+                border-bottom: 1px solid #ebedf0;
+
+                .title {
+                    font-size: 20px;
+                    line-height: 1.2;
+                    font-weight: 600;
+                    color: #2d3149;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        margin-right: 10px;
+                        width: 23px;
+                        height: 24px;
+
+                        path {
+                            fill: #a7a8b3;
+                        }
+                    }
+                }
+            }
+
+            .form-wrapper {
+                .form-header {
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h4 {
+                        font-size: 18px;
+                        line-height: 1;
+                        font-weight: 600;
+                        color: #2d3149;
+                    }
+
+                    .mintmrm-btn {
+                        padding: 10px 20px;
+                        display: flex;
+                        align-items: center;
+                        box-shadow: 0px 10px 16px #61677426;
+
+                        svg {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                .inline-field {
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    gap: 16px;
+                }
+
+                .form-group {
+                    display: flex;
+                    align-items: center;
+                    flex-flow: row wrap;
+                    margin-bottom: 22px;
+
+                    &.label-block {
+                        display: block;
+
+                        .input-custom-wrapper {
+                            width: 100%;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    & > label {
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 1.2;
+                        color: #2d3149;
+                        width: 223px;
+                        padding-right: 10px;
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 9px;
+
+                        .mintmrm-tooltip {
+                            top: 3px;
+
+                            svg {
+                                rect {
+                                    fill: #686f7f;
+                                }
+                            }
+                        }
+                    }
+
+                    &.top-align {
+                        align-items: flex-start;
+
+                        & > label {
+                            padding-top: 0;
+                        }
+                    }
+
+                    .error-message {
+                        padding: 0;
+                        margin-top: 2px;
+                    }
+
+                    .input-custom-wrapper,
+                    input[type="url"],
+                    input[type="number"],
+                    input[type="email"],
+                    input[type="text"],
+                    textarea,
+                    select {
+                        width: calc(100% - 223px);
+                    }
+
+                    input[type="url"],
+                    input[type="password"],
+                    input[type="number"],
+                    input[type="email"],
+                    input[type="text"],
+                    textarea,
+                    select {
+                        font-size: 14px;
+                        line-height: 1.3;
+                        color: #2d3149;
+                        font-weight: 500;
+                        padding: 12px 15px;
+
+                        &:focus {
+                            border-color: $primary-color;
+                        }
+                    }
+
+                    input[type="number"]::-webkit-outer-spin-button,
+                    input[type="number"]::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    input[type="number"] {
+                        -moz-appearance: textfield;
+                    }
+
+                    .wp-editor-wrap {
+                        textarea {
+                            border: none;
+                        }
+                    }
+
+                    .input-custom-wrapper {
+                        input[type="url"],
+                        input[type="number"],
+                        input[type="email"],
+                        input[type="text"],
+                        textarea,
+                        select {
+                            width: 100%;
+                        }
+
+                        .normal-text {
+                            font-size: 14px;
+                            line-height: 1.4;
+                            font-weight: 500;
+                            letter-spacing: -0.01em;
+                            color: #344054;
+                        }
+                    }
+
+                    .has-icon {
+                        svg {
+                            position: absolute;
+                            top: 50%;
+                            right: 15px;
+                            transform: translateY(-50%);
+                        }
+                        path {
+                            fill: #a7a8b3;
+                        }
+                    }
+
+                    .mintmrm-switcher {
+                        span,
+                        label {
+                            width: 34px;
+                            height: 20px;
+                        }
+                        label:after {
+                            top: 1px;
+                            left: 2px;
+                            width: 16px;
+                            height: 16px;
+                        }
+                        input[type="checkbox"]:checked + label:after {
+                            margin-left: 13px;
+                            filter: none;
+                        }
+                    }
+
+                    .mintmrm-radiobtn {
+                        margin-right: 30px;
+
+                        label {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 1.21;
+                            color: #344054;
+                        }
+
+                        label::before {
+                            width: 18px;
+                            height: 18px;
+                            top: -1px;
+                        }
+
+                        label::after {
+                            width: 8px;
+                            height: 8px;
+                            top: 4px;
+                        }
+                    }
+
+                    .drop-down-button {
+                        position: relative;
+                        width: 100%;
+                        border: 1px solid #ebedf0;
+                        border-radius: 6px;
+                        padding: 13px 16px;
+                        background-color: transparent;
+                        text-align: left;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.21;
+                        color: #a4a8b5;
+
+                        &::before {
+                            content: " ";
+                            display: block;
+                            position: absolute;
+                            border-style: solid;
+                            border-color: #a4a8b5;
+                            border-width: 0px 2px 2px 0px;
+                            transform: rotate(45deg) translateY(-50%);
+                            transform-origin: center;
+                            transition: all 0.3s ease;
+                            height: 6px;
+                            right: 21px;
+                            top: calc(50% - 2px);
+                            width: 6px;
+                            cursor: pointer;
+                        }
+                        &.show::before {
+                            transform: rotate(225deg);
+                        }
+
+                        .single-list {
+                            border: 1px solid #e4e6eb;
+                            border-radius: 4px;
+                            font-size: 12px;
+                            line-height: 1;
+                            letter-spacing: -0.01em;
+                            color: #667085;
+                            display: inline-block;
+                            padding: 3px 22px 3px 6px;
+                            margin-right: 6px;
+                            margin-bottom: 5px;
+                            position: relative;
+                            vertical-align: middle;
+
+                            .close-list {
+                                background: transparent;
+                                padding: 3px 6px 2px;
+                                border-radius: 2px;
+                                font-size: 10px;
+                                cursor: pointer;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                height: 100%;
+                                border: none;
+
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    height: 100%;
+                                    width: 1px;
+                                    background: #e4e6eb;
+                                }
+                                svg {
+                                    width: 6px;
+                                    height: 6px;
+
+                                    path {
+                                        fill: #a7a8b3;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .mintmrm-dropdown {
+                        top: calc(100% + 4px);
+                    }
+                }
+
+                hr {
+                    display: block;
+                    border-color: #ebedf0;
+                    margin: 30px 0;
+                    border-bottom: none;
+                }
+
+                .photo-upload {
+                    .photo-area {
+                        display: flex;
+                        flex-flow: row wrap;
+                        gap: 33px;
+                        width: calc(100% - 223px);
+                    }
+
+                    .preview-img {
+                        width: 105px;
+                        height: 105px;
+                        border-radius: 100%;
+                        background: #f6f8fa;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .upload-area {
+                        border: 2px dashed #dadfe8;
+                        border-radius: 6px;
+                        width: calc(100% - 138px);
+                        height: 194px;
+
+                        button {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-flow: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 20px;
+                            font-size: 14px;
+                            line-height: 1.4;
+                            color: #a7a8b3;
+                            background-color: transparent;
+                        }
+
+                        .icon {
+                            background: #f6f8fa;
+                            border-radius: 100%;
+                            height: 70px;
+                            width: 70px;
+                            display: flex;
+                            flex-flow: column;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 14px;
+                        }
+
+                        mark {
+                            font-weight: 600;
+                            color: $primary-color;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-settings-wrapper,
+        .business-settings-wrapper {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        .tab-footer {
+            border-top: 1px solid #ebedf0;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: flex-end;
+
+            .mintmrm-btn {
+                .mintmrm-loader {
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+
+        .wp-editor-wrap {
+            .wp-switch-editor {
+                float: left;
+                box-sizing: content-box;
+                position: relative;
+                top: 1px;
+                background: transparent;
+                color: #646970;
+                cursor: pointer;
+                font-size: 13px;
+                line-height: 1.46153846;
+                height: 20px;
+                margin: 5px 0 0 5px;
+                padding: 3px 8px 4px;
+                border: 1px solid #dcdcde;
+            }
+
+            &.tmce-active {
+                .switch-tmce {
+                    background: #f0f0f1;
+                }
+            }
+            &.html-active {
+                .switch-html {
+                    background: #f0f0f1;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1299px) {
+    .mintmrm-settings-page
+        .mintmrm-settings-wrapper
+        .settings-tab-content
+        .form-wrapper
+        .form-group
+        .input-custom-wrapper
+        .mintmrm-radiobtn {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .mintmrm-settings-page .mintmrm-settings-wrapper {
+        gap: 20px;
+
+        .settings-tab-content {
+            width: calc(100% - 291px);
+
+            .form-wrapper .form-group > label {
+                font-size: 14px;
+                width: 180px;
+                padding-right: 16px;
+            }
+
+            .form-wrapper {
+                .form-group {
+                    .input-custom-wrapper,
+                    input[type="url"],
+                    input[type="number"],
+                    input[type="email"],
+                    input[type="text"],
+                    textarea,
+                    select {
+                        width: calc(100% - 180px);
+                    }
+
+                    .mintmrm-radiobtn {
+                        display: block;
+                        margin-bottom: 15px;
+                        label {
+                            font-size: 13px;
+                        }
+                    }
+                    .mintmrm-checkbox {
+                        label {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+
+            .form-wrapper .photo-upload {
+                .photo-area {
+                    flex-flow: column wrap;
+                    width: calc(100% - 195px);
+                }
+                .upload-area {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .mintmrm-settings-page
+        .mintmrm-settings-wrapper
+        .settings-tab-content
+        .form-wrapper
+        .form-group.has-wysiwyg-editor {
+        display: block;
+    }
+    .mintmrm-settings-page
+        .mintmrm-settings-wrapper
+        .settings-tab-content
+        .form-wrapper
+        .inline-field {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .mintmrm-settings-page
+        .mintmrm-settings-wrapper
+        .settings-tab-content
+        .tab-body {
+        padding: 20px;
+    }
+
+    .mintmrm-settings-page
+        .mintmrm-settings-wrapper
+        .settings-tab-content
+        .form-wrapper
+        .form-group.has-wysiwyg-editor
+        > label {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .mintmrm-settings-page
+        .mintmrm-settings-wrapper
+        .settings-tab-content
+        .form-wrapper
+        .form-group.has-wysiwyg-editor
+        .input-custom-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    // .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group{
+    //     align-items: flex-start;
+    //     flex-flow: column wrap;
+    // }
+    // .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group > label {
+    //     margin-bottom: 15px;
+    // }
+    // .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group .input-custom-wrapper, .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group input[type=url], .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group input[type=number], .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group input[type=email], .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group input[type=text], .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group textarea, .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group select {
+    //     width: 100%;
+    // }
+    // .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .photo-upload .photo-area {
+    //     flex-flow: row wrap;
+    //     width: 100%;
+    // }
+    // .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .photo-upload .upload-area {
+    //     width: calc(100% - 138px);
+    // }
+    // .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group .input-custom-wrapper .mintmrm-radiobtn {
+    //     display: inline-block;
+    // }
+    // .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group .drop-down-button {
+    //     position: relative;
+    // }
+    // .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content .form-wrapper .form-group.label-with-switcher{
+    //     flex-flow: row wrap;
+    //     justify-content: space-between;
+    // }
+}
+
+@media only screen and (max-width: 991px) {
+    .mintmrm-settings-page .mintmrm-settings-wrapper {
+        gap: 15px;
+    }
+    .mintmrm-settings-page .mintmrm-settings-wrapper .settings-tab-content {
+        width: calc(100% - 215px);
+    }
+}

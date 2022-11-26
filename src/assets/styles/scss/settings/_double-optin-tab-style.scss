@@ -1,0 +1,17 @@
+.mintmrm-settings-page {
+  .mintmrm-settings-wrapper {
+    .settings-tab-content {
+      .form-wrapper {
+        .confirmation-message-section,
+        .redirect-url-section,
+        .page-dropdown-section {
+          display: none;
+
+          &.show {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

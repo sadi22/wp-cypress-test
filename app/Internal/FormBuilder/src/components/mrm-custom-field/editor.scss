@@ -1,0 +1,15 @@
+$border-color: #D6D9DD;
+$primary-color: #6e42d3;
+
+.mrm-input-group label{
+    display: block;
+}
+.mrm-input-group.textarea label{
+    display: block;
+}
+.mrm-radio-group,
+.mrm-checkbox-group{
+    label{
+        display: inline-block;
+    }
+}
