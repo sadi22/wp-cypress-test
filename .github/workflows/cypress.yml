@@ -39,7 +39,7 @@ jobs:
               uses: cypress-io/github-action@v4
               with:
                 install-command: npm install --ignore-engines --force
-                config-file: tests/cypress/cypress-config.json
+                config-file: tests/cypress/config.json
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - uses: actions/upload-artifact@v3
